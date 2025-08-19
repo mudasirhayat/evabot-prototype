@@ -1,0 +1,187 @@
+EVA - Voice-Powered Productivity Assistant
+========================================
+
+Overview
+--------
+EVA is a desktop application that combines voice recognition, AI planning, and browser automation to create a seamless voice-controlled productivity experience. It enables users to speak commands naturally and have them translated into actionable steps that can be automatically executed.
+
+Core Features
+------------
+1. Voice Recognition
+   - Real-time voice capture and processing
+   - High-accuracy transcription using Whisper AI
+   - Support for multiple languages
+   - Configurable recording settings
+
+2. AI-Powered Planning
+   - Multiple AI service integrations (Tavily, Perplexity, Ollama)
+   - Natural language command interpretation
+   - Structured action plan generation
+   - Configurable planning preferences
+
+3. Browser Automation
+   - Automated web interactions
+   - Task execution recording
+   - Visual feedback with GIF capture
+   - Error handling and recovery
+
+4. User Interface
+   - Clean, minimal desktop interface
+   - System tray integration
+   - Real-time transcription display
+   - Visual recording indicators
+   - Settings management panel
+
+Technical Architecture
+--------------------
+1. Frontend (Electron)
+   - Modern desktop application
+   - Cross-platform compatibility
+   - Native system integration
+   - Real-time WebSocket communication
+
+2. Backend (Python)
+   - FastAPI WebSocket server
+   - Whisper voice recognition
+   - LangChain AI integration
+   - Playwright browser automation
+
+3. AI Services
+   - Tavily for web search and analysis
+   - Perplexity for reasoning and planning
+   - Ollama for local AI processing
+   - Extensible provider system
+
+Use Cases
+---------
+1. Web Research
+   - Voice-commanded web searches
+   - Automated information gathering
+   - Content summarization
+   - Data extraction
+
+2. Task Automation
+   - Form filling
+   - Data entry
+   - Web navigation
+   - Repetitive task execution
+
+3. Content Creation
+   - Document drafting
+   - Email composition
+   - Social media posting
+   - Content research
+
+4. System Control
+   - Application launching
+   - System settings adjustment
+   - File management
+   - Window control
+
+Settings & Customization
+-----------------------
+1. AI Service Selection
+   - Choice of AI providers
+   - API key management
+   - Model selection
+   - Performance tuning
+
+2. Action Planning
+   - Plan generation toggle
+   - Plan visibility options
+   - Execution preferences
+   - Context customization
+
+3. Voice Recognition
+   - Recording duration limits
+   - Audio quality settings
+   - Language preferences
+   - Transcription options
+
+4. Interface
+   - Auto-copy preferences
+   - Visual feedback options
+   - Window behavior
+   - System tray settings
+
+Security & Privacy
+----------------
+1. Data Handling
+   - Local audio processing
+   - Configurable recording retention
+   - Secure API key storage
+   - Privacy-focused design
+
+2. Service Integration
+   - Encrypted communication
+   - Secure token management
+   - Rate limiting
+   - Error protection
+
+3. System Access
+   - Limited permissions model
+   - Sandboxed execution
+   - Secure update system
+   - Resource management
+
+Technical Requirements
+--------------------
+1. System
+   - Windows/Mac/Linux support
+   - 4GB RAM minimum
+   - 2GB storage space
+   - Microphone access
+
+2. Network
+   - Stable internet connection
+   - WebSocket support
+   - API access
+   - Browser compatibility
+
+3. Optional
+   - GPU for faster processing
+   - Additional storage for recordings
+   - Multiple displays
+   - High-quality microphone
+
+Future Development
+----------------
+1. Planned Features
+   - Additional AI service integrations
+   - Enhanced automation capabilities
+   - Improved voice recognition
+   - Extended customization options
+
+2. Optimization Goals
+   - Reduced resource usage
+   - Faster processing
+   - Better error handling
+   - Enhanced security
+
+3. Integration Plans
+   - Additional browser support
+   - Cloud service connections
+   - Third-party plugins
+   - API access
+
+Support & Documentation
+---------------------
+1. User Resources
+   - Getting started guide
+   - Feature documentation
+   - Troubleshooting guide
+   - FAQ section
+
+2. Developer Resources
+   - API documentation
+   - Integration guides
+   - Plugin development
+   - Best practices
+
+3. Community
+   - User forums
+   - Feature requests
+   - Bug reporting
+   - Knowledge base
+
+This document provides a comprehensive overview of EVA's capabilities, architecture, and future direction. For specific technical details, please refer to the corresponding documentation sections. 
