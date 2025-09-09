@@ -7,11 +7,10 @@ try:
 except Exception as e:
     print("An error occurred")
 
-draw.ellipse([5, 2, 11, 6], fill=(255))
+try:
+    draw.ellipse([5, 2, 11, 6], fill=(255))
+except Exception as e:
+    print(f"An error occurred while drawing ellipse: {e}")
 
-# Create the assets directory if it doesn't exist
-import os
-os.makedirs('../electron-app/assets', exist_ok=True)
-
-# Save the icon
-img.save('../electron-app/assets/tray-icon.png') 
+try:
+    os.makedirs('../electron-app/assets
