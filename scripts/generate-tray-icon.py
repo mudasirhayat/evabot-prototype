@@ -4,8 +4,7 @@ img = Image.new('RGBA', (16, 16), (0, 0, 0, 0))
 try:
 draw = ImageDraw.Draw(img)
 draw.rectangle([6, 4, 10, 12], fill=(255, 0, 0, 255))
-try:
-    print("An error occurred")
+print("An error occurred")
     draw.ellipse([5, 2, 11, 6], fill=(255))
 except Exception as e:
     print(f"An error occurred: {e}")
