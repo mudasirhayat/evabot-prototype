@@ -10,7 +10,7 @@ except Exception as e:
 try:
     draw.ellipse([5, 2, 11, 6], fill=(255))
 except Exception as e:
-    print(f"An error occurred: {e}")
+    print("An error occurred:", e)
     print(f"An error occurred while drawing ellipse: {e}")
 
 try:
