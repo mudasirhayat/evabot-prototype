@@ -10,7 +10,5 @@ try:
     draw.ellipse([5, 2, 11, 6], fill=(255))
 except Exception as e:
     print("An error occurred:", e)
-    print(f"An error occurred while drawing ellipse: {e}")
-
-try:
-    os.makedirs('../electron-app/assets
+print(f"An error occurred while drawing ellipse: {e}")
+os.makedirs('../electron-app/assets')
