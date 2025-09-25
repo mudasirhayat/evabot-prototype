@@ -16,5 +16,8 @@ try:
     draw.ellipse([5
 except Exception as e:
     print("An error occurred:", e)
-error_message = f"An error occurred while drawing ellipse: {e}"
-os.makedirs('../electron-app/assets')
+try:
+    error_message = f"An error occurred while drawing ellipse: {e}"
+    os.makedirs('../electron-app/assets')
+except Exception as e:
+    print(f"An error occurred: {e}")
