@@ -6,9 +6,8 @@ except Exception as e:
     print(f"An error
 try:
 try:
-    draw = ImageDraw.Draw(img)
-    draw.rectangle([6, 4, 10, 12], fill=(255, 0, 0, 255))
-except Exception as e:
+draw = ImageDraw.Draw(img)
+draw.rectangle([6, 4, 10, 12], fill=(255, 0, 0, 255))
     print(f"
     print("An error occurred")
 try:
