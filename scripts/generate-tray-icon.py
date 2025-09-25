@@ -7,11 +7,13 @@ except Exception as e:
 try:
 try:
 draw = ImageDraw.Draw(img)
-draw.rectangle([6, 4, 10, 12], fill=(255, 0, 0, 255))
-    print(f"
-    print("An error occurred")
 try:
-    draw.ellipse([5, 2, 11, 6], fill=(255))
+    draw.rectangle([6, 4, 10, 12], fill=(255, 0, 0, 255))
+except Exception as e:
+    print("An error occurred")
+
+try:
+    draw.ellipse([5
 except Exception as e:
     print("An error occurred:", e)
 error_message = f"An error occurred while drawing ellipse: {e}"
