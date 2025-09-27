@@ -16,6 +16,7 @@ except Exception as e:
     print("An error occurred:", e)
 try:
     error_message = f"An error occurred while drawing ellipse: {e}"
+try:
     os.makedirs('../electron-app/assets')
 except Exception as e:
     print(f"An error occurred: {e}")
