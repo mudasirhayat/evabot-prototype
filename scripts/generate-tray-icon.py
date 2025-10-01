@@ -16,8 +16,8 @@ try:
     draw.ellipse([5
 except Exception as e:
     logging.error("An error occurred", exc_info=True)
-try:
     error_message = f"An error occurred while drawing ellipse: {e}"
+    raise
 try:
     os.makedirs('../electron-app/assets')
 except Exception as e:
