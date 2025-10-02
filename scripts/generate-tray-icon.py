@@ -1,8 +1,6 @@
 from PIL import Image, ImageDraw
 
-try:
-try:
-    img = Image.new('RGBA', (16, 16), (0, 0, 0, 0))
+img = Image.new('RGBA', (16, 16), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
 except Exception as e:
 except Exception as e:
