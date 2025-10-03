@@ -10,10 +10,10 @@ except Exception as e:
 try:
     draw.rectangle([6, 4, 10, 12], fill=(255, 0, 0, 255))
 except Exception as e:
-    print("An error occurred")
-
 try:
-    draw.ellipse([5
+    draw.ellipse([5])
+except Exception as e:
+    print("An error occurred")
 except Exception as e:
     logging.error("An error occurred", exc_info=True)
     error_message = f"An error occurred while drawing ellipse: {e}"
