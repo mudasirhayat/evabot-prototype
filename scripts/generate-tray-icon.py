@@ -10,8 +10,10 @@ try:
     print("An error occurred:", e)
     draw.rectangle([6, 4, 10, 12], fill=(255, 0, 0, 255))
 except Exception as e:
-    print("An error occurred
+try:
+    print("An error occurred")
 except Exception as e:
+    print(f"An error occurred: {e}")
 try:
     draw.ellipse([5])
 except Exception as e:
