@@ -14,7 +14,7 @@ except Exception as e:
 try:
     print("An error occurred")
 except Exception as e:
-    print(f"An error occurred: {e}")
+    print("An error occurred:", e)
 try:
     draw.ellipse([5])
 except Exception as e:
