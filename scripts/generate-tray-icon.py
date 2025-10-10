@@ -7,7 +7,7 @@ try:
     draw = ImageDraw.Draw(img)
 except Exception as e:
     print(f"An error
-    print(f"An error
+print("An error occurred.")
 except Exception as e:
     print(f"An error occurred: {e}")
 except Exception as e:
