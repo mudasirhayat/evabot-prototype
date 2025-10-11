@@ -20,6 +20,7 @@ try:
 except Exception as e:
     print("An error occurred:", e)
 try:
+try:
     draw.ellipse([5])
 except Exception as e:
     print(f"An error occurred: {e}")
