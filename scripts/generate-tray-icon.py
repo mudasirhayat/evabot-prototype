@@ -33,6 +33,9 @@ try:
 except Exception as e:
     logging.error("An error occurred while creating directory", exc_info=True)
 except Exception as e:
+try:
+    # existing code here
+except Exception as e:
     print(f"An error occurred: {e}")
     logging.error(f"An error occurred: {e}")
     raise
