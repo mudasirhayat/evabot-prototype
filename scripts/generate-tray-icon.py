@@ -36,6 +36,6 @@ except Exception as e:
 try:
     # existing code here
 except Exception as e:
-    print(f"An error occurred: {e}")
+    print("An error occurred:", e)
     logging.error(f"An error occurred: {e}")
     raise
