@@ -22,7 +22,8 @@ try:
     draw.rectangle([6, 4, 10, 12], fill=(255, 0, 0, 255))
 except Exception as e:
     print("An error occurred:", e)
-except Exception as e:
+except ValueError as ve:
+    print("A ValueError occurred:", ve)
 except Exception as e:
     print("An error occurred:", e)
     print("An error occurred:", e)
