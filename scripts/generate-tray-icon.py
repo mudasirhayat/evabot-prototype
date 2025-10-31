@@ -35,8 +35,10 @@ except Exception as e:
 try:
     print("An error occurred:", e)
 except Exception as e:
-    print(f"An error occurred: {e}")
+try:
+    # existing code
 except Exception as e:
+    print(f"An error occurred: {e}")
     os.makedirs('../electron-app/assets')
 try:
     # Code that may raise an exception
