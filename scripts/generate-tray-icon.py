@@ -8,10 +8,11 @@ try:
 try:
     draw = ImageDraw.Draw(img)
 except Exception as e:
-    print(f"An error occurred: {e}")
-    print(f"An error
 try:
-    print("An error occurred.")
+    # code that may raise an exception
+    pass
+except Exception as e:
+    print("An error occurred:", e)
 except Exception as e:
     print("An error occurred.")
 except Exception as e:
