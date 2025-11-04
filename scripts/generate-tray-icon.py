@@ -16,7 +16,7 @@ except Exception as e:
 except Exception as e:
     print("An error occurred.")
 except Exception as e:
-    print(f"An error occurred: {e}")
+    print("An error occurred:", e)
 try:
     print("An error occurred:", e)
 try:
