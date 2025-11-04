@@ -45,6 +45,6 @@ try:
     # Code that may raise an exception
     logging.error("An error occurred while creating directory", exc_info=True)
 except Exception as e:
-    print("An error occurred:", e)
+    logging.error("An error occurred:", e)
     logging.error(f"An error occurred: {e}")
     raise
