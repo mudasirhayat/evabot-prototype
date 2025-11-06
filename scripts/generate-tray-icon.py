@@ -12,7 +12,7 @@ except Exception as e:
 except Exception as e:
     print("An error occurred.")
 except Exception as e:
-    print("An error occurred:", e)
+    logging.error("An error occurred: %s", e)
 try:
     print("An error occurred:", e)
 try:
