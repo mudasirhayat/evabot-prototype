@@ -12,9 +12,9 @@ except Exception as e:
 except Exception as e:
     print("An error occurred.")
 except Exception as e:
-    logging.error("An error occurred: %s", e)
-try:
-    print("An error occurred:", e)
+    error_message = "An error occurred: %s" % e
+    logging.error(error_message)
+    print(error_message)
 try:
     draw.rectangle([6, 4, 10, 12], fill=(255, 0, 0, 255))
 except Exception as e:
