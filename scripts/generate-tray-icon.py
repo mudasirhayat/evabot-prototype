@@ -36,7 +36,10 @@ try:
     # existing code
 except Exception as e:
     print(f"An error occurred: {e}")
-    os.makedirs('../electron-app/assets')
+    try:
+        os.makedirs('../electron-app/assets')
+    except OSError as e:
+        print(f"An error occurred while creating directory: {e}")
 try:
     # Code that may raise an exception
     logging.error("An error occurred while creating directory", exc_info=True)
