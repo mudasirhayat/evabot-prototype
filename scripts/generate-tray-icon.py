@@ -28,8 +28,11 @@ except ValueError as ve:
 try:
     # existing code here
 except ValueError as ve:
+print("A ValueError occurred:", ve)
+
+except ValueError as ve:
     print("A ValueError occurred:", ve)
-except Exception as e:
+
 except Exception as e:
     print(f"An error occurred: {e}")
 try:
