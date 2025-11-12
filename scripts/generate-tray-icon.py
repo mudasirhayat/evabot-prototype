@@ -30,7 +30,9 @@ except ValueError as ve:
 try:
     # existing code here
 except ValueError as ve:
-print("A ValueError occurred:", ve)
+    print("A ValueError occurred:", ve)
+except Exception as e:
+    print("An error occurred:", e)
 
 except ValueError as ve:
     print(f"A ValueError occurred: {ve}")
