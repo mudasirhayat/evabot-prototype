@@ -1,10 +1,6 @@
 from PIL import Image, ImageDraw
 
-try:
-try:
-try:
-try:
-    img = Image.new('RGBA', (16, 16), (0, 0, 0, 0))
+img = Image.new('RGBA', (16, 16), (0, 0, 0, 0))
 try:
 try:
     draw = ImageDraw.Draw(img)
