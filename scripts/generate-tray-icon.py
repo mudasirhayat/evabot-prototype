@@ -39,6 +39,9 @@ try:
     # existing code
 except Exception as e:
 try:
+import os
+
+try:
     os.makedirs('../electron-app/assets')
 except Exception as e:
     print(f"An error occurred: {e}")
