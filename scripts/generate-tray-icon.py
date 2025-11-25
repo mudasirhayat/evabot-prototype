@@ -7,7 +7,7 @@ try:
 except Exception as e:
     print(f"An error occurred: {e}")
 except Exception as e:
-    print("An error occurred.")
+    print(f"An error occurred: {e}")
     error_message = "An error occurred: %s" % e
     logging.error(error_message)
 try:
