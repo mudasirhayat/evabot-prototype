@@ -29,6 +29,9 @@ except Exception as e:
 try:
     # existing code here
 except ValueError as ve:
+try:
+    print("A ValueError occurred:", ve)
+except ValueError as ve:
     print("A ValueError occurred:", ve)
 except Exception as e:
     print("An error occurred:", e)
