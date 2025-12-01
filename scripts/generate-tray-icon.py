@@ -17,9 +17,12 @@ try:
 except Exception as e:
     print(f"An error occurred: {e
 except Exception as e:
-print("An error occurred")
-print(f"An error occurred: {e}")
+try:
+    # existing code here
+
 except Exception as e:
+    print("An error occurred")
+    print(f"An error occurred: {e}")
 try:
     # existing code here
 except ValueError as ve:
