@@ -43,7 +43,7 @@ except ValueError as ve:
 try:
     print(f"A ValueError occurred: {ve}")
 except ValueError as ve:
-    print(f"A ValueError occurred: {ve}")
+    print("A ValueError occurred:", ve)
 except Exception as e:
     print(f"An error occurred: {e}")
     raise e
