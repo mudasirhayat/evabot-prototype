@@ -23,6 +23,7 @@ try:
 except Exception as e:
     print("An error occurred")
     print(f"An error occurred: {e}")
+    raise e
 try:
     # existing code here
 except ValueError as ve:
