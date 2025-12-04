@@ -31,7 +31,7 @@ except ValueError as ve:
 except ValueError as ve:
     print("A ValueError occurred:", ve)
 except Exception as e:
-    print("An error occurred:", e)
+    print(f"An error occurred: {e}")
 except ValueError as ve:
     print("A ValueError occurred:", ve)
 except Exception as e:
