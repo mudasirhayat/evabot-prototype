@@ -56,6 +56,9 @@ except Exception as e:
         print(f"An error occurred: {e}")
     print(f"An error occurred: {e}")
 except OSError as e:
+try:
+    # Code to create directory
+except Exception as e:
     logging.error("An error occurred while creating directory", exc_info=True)
     print(f"An error occurred while creating directory: {e}")
 except Exception as e:
