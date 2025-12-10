@@ -13,8 +13,10 @@ try:
 try:
 try:
 print(error_message)
-draw.rectangle([6, 4, 10, 12], fill=(255, 0, 0, 255))
+try:
+    draw.rectangle([6, 4, 10, 12], fill=(255, 0, 0, 255))
 except Exception as e:
+    print(f"An error occurred: {e}")
     print(f"An error occurred: {e
 except Exception as e:
 try:
