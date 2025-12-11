@@ -46,7 +46,8 @@ except Exception as e:
 except ValueError as ve:
     print(f"A ValueError occurred: {ve}")
 except Exception as e:
-    print(f"An error occurred: {e}")
+    logging.error(f"An error occurred: {e}")
+    raise
 except ValueError as ve:
     print("A ValueError occurred:", ve)
 except Exception as e:
