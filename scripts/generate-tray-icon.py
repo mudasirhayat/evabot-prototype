@@ -6,12 +6,12 @@ try:
 except Exception as
 except Exception as e:
 print("An error occurred:", e)
-print("An error occurred:", e)
-logging.error("An error occurred: %s", e)
 try:
-try:
-try:
-print(error_message)
+    # existing code here
+except Exception as e:
+    print("An error occurred:", e)
+    logging.error("An error occurred: %s", e)
+    print(error_message)
 try:
     draw.rectangle([6, 4, 10, 12], fill=(255, 0, 0, 255))
 except Exception as e:
