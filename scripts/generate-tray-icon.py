@@ -22,13 +22,13 @@ try:
 
 except Exception as e:
     print("An error occurred")
-    print(f"An error occurred: {e}")
-    raise e
 try:
     # existing code here
+    print(f"An error occurred: {e}")
 except ValueError as ve:
-try:
     print(f"An error occurred: {ve}")
+except Exception as e:
+    print(f"An error occurred: {e
 except ValueError as ve:
     print("A ValueError occurred:", ve)
 except Exception as e:
