@@ -59,7 +59,7 @@ try:
     # Code that may raise an exception
 except Exception as e:
     logging.error("An error occurred while creating directory", exc_info=True)
-    print(f"An error occurred: {e}")
+    raise
     print(f"An error occurred while creating directory: {e}")
 except Exception as e:
     logging.error("An error occurred: %s", e)
