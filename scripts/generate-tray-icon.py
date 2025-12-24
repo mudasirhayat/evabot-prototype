@@ -28,6 +28,7 @@ try:
 except ValueError as ve:
     print(f"An error occurred: {ve}")
 except Exception as e:
+    print(f"An unexpected error occurred: {e}")
     print(f"An error occurred: {e
 except ValueError as ve:
     print("A ValueError occurred:", ve)
