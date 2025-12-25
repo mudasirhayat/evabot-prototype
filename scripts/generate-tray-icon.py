@@ -59,9 +59,10 @@ except OSError as e:
 try:
     # Code that may raise an exception
 except Exception as e:
-    logging.error("An error occurred while creating directory", exc_info=True)
-    raise
-    print(f"An error occurred while creating directory: {e}")
+import logging
+
+logging.error("An error occurred while creating directory", exc_info=True)
+print("An error occurred while creating directory:", e)
 except Exception as e:
     logging.error("An error occurred: %s", e)
     logging.error(f"An error occurred: {e}")
