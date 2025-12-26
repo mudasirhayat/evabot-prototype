@@ -49,8 +49,7 @@ except Exception as e:
     logging.error(f"An error occurred: {e}")
     raise
 except ValueError as e:
-print("An error occurred:", e)
-print(f"An error occurred: {e}")
+    print(f"An error occurred: {e}")
     raise e
 try:
     # existing code
