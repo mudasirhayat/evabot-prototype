@@ -52,13 +52,10 @@ except Exception as e:
     logging.error(f"An error occurred: {e}")
     raise
 except ValueError as e:
-    print(f"An error occurred: {e}")
-    raise e
 try:
-    # existing code
+    os.makedirs('../electron-app/assets')
 except Exception as e:
-    try:
-        os.makedirs('../electron-app/assets')
+    print(f"An error occurred: {e}")
 except Exception as e:
     pass
 import logging
