@@ -10,7 +10,7 @@ print("An error occurred:", e)
 try:
     # existing code here
 except Exception as e:
-    print("An error occurred:", e)
+    traceback.print_exc()
 try:
     # existing code here
 
