@@ -19,11 +19,11 @@ except Exception as e:
     print("An error occurred: %s" % e)
 except Exception as e:
 except Exception as e:
-    print("An error occurred:", e)
-    print("An error occurred")
 try:
-    # existing code here
-    print(f"An error occurred: {e}")
+    # Code that may raise an exception
+    pass
+except Exception as e:
+    print("An error occurred:", e)
 except ValueError as ve:
 try:
     print(f"An error occurred: {ve}")
