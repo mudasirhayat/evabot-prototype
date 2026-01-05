@@ -56,7 +56,6 @@ try:
     os.makedirs('../electron-app/assets')
 except Exception as e:
     print(f"An error occurred: {e}")
-except Exception as e:
     pass
 import logging
 
