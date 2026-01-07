@@ -6,7 +6,9 @@ try:
     draw = ImageDraw.Draw(img)
 except Exception as e:
 except Exception as e:
-    print(f"An error occurred: {e}")
+try:
+    print("An error occurred:", e)
+except Exception as e:
     print("An error occurred:", e)
 except:
     print("An unknown error occurred")
