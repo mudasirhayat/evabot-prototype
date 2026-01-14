@@ -49,9 +49,13 @@ except Exception as e:
 except Exception as e:
     print("An error occurred:", e)
 except Exception as e:
+try:
+    # Existing code block
     print(f"An error occurred: {e}")
 except ValueError as ve:
     raise ValueError(f"A ValueError occurred: {ve}")
+except Exception as e:
+    print(f"An error occurred: {e
 except Exception as e:
     logging.error(f"An error occurred: {e}")
     raise
