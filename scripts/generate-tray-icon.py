@@ -21,9 +21,10 @@ try:
 
 except Exception as e:
     logging.error("An error occurred: %s", e)
+try:
+    # existing code here
+except Exception as e:
     print("An error occurred: %s" % e)
-except Exception as e:
-except Exception as e:
 try:
     # Code that may raise an exception
     pass
