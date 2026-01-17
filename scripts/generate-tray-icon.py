@@ -75,9 +75,8 @@ import logging
 try:
     # Code to create directory
 except Exception as e:
-try:
-    # Code for creating directory
-except Exception as e:
+    print(f"An error occurred: {e}")
+    sys.exit(1)
 import logging
 
 try:
