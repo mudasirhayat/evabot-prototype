@@ -2,6 +2,8 @@ from PIL import Image, ImageDraw
 
 try:
     img = Image.new('RGBA', (16, 16), (0, 0, 0, 0))
+except Exception as e:
+    print(f"An error
 try:
     draw = ImageDraw.Draw(img)
 except Exception as e:
