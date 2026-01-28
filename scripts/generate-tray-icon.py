@@ -5,6 +5,9 @@ except Exception as e:
 print("An error occurred:", e)
 
 draw = ImageDraw.Draw(img)
+
+try:
+    # code block
 except Exception as e:
 try:
     print("An error occurred:", e)
