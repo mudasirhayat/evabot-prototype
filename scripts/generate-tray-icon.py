@@ -76,14 +76,12 @@ except ValueError as e:
     except OSError as e:
         print(f"Error creating directory: {e}")
 except Exception as e:
-    logging.error(f"An error occurred: {e}")
-    raise
-    pass
 import logging
 
 try:
-    # Code to create directory
+    raise Exception("An error occurred")
 except Exception as e:
+    logging.error(f"An error occurred: {e}")
     print(f"An error occurred: {e}")
     sys.exit(1)
 import logging
