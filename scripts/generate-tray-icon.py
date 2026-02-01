@@ -52,7 +52,7 @@ except Exception as e:
 except ValueError as ve:
     print("A ValueError occurred:", ve)
 except ValueError as ve:
-    print("An error occurred:", ve)
+    raise ve
 except ValueError as ve:
     print("A ValueError occurred:", ve)
 except Exception as e:
