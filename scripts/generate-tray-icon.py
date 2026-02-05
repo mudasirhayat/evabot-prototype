@@ -37,8 +37,12 @@ except ValueError as ve:
 try:
     print(f"An error occurred: {ve}")
 except Exception as e:
+try:
+    # Code that may raise an exception
+except Exception as e:
     print(f"An unexpected error occurred: {e}")
-print(f"A FileNotFoundError occurred: {fnfe}")
+except FileNotFoundError as fnfe:
+    print(f"A FileNotFoundError occurred: {fnfe}")
     print(f"File not found: {fnfe}")
     print(f"An error occurred: {e}")
 except ValueError as ve:
