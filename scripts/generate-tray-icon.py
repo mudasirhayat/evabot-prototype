@@ -87,7 +87,10 @@ except Exception as e:
 import logging
 
 try:
-logging.error("An error occurred while creating directory", exc_info=True)
+    # Code to create directory goes here
+    pass
+except Exception as e:
+    logging.error("An error occurred while creating directory", exc_info=True)
     print("An error occurred while creating directory:", e)
     logging.error("An error occurred: %s", e)
     logging.error(f"An error occurred: {e}")
