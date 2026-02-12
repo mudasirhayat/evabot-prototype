@@ -60,7 +60,7 @@ except ValueError as ve:
 except ValueError as ve:
     print("A ValueError occurred:", ve)
 except Exception as e:
-    print("An error occurred:", e)
+    logging.error("An error occurred: %s", e)
 except Exception as e:
 try:
     # Existing code block
