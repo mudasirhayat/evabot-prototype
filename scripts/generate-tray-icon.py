@@ -87,8 +87,10 @@ try:
 except Exception as e:
     logging.error(f"An error occurred: {e}")
     print(f"An error occurred: {e}")
-    sys.exit(1)
+import sys
 import logging
+
+sys.exit(1)
 
 try:
     # Code to create directory goes here
