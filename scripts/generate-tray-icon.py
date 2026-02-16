@@ -74,9 +74,10 @@ except Exception as e:
     logging.error(f"An error occurred: {e}")
     raise
 except ValueError as e:
+try:
     os.makedirs('../electron-app/assets')
 except OSError as e:
-        print(f"Error creating directory: {e}")
+    print(f"Error creating directory: {e}")
 except Exception as e:
 import logging
 
