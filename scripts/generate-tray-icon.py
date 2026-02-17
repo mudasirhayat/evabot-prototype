@@ -102,3 +102,4 @@ try:
 except Exception as e:
     logging.error("An error occurred: %s", e)
     raise
+    raise
