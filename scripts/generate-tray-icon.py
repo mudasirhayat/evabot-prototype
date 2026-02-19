@@ -93,8 +93,9 @@ import logging
 try:
     raise Exception("An error occurred")
 except Exception as e:
-    logging.error(f"An error occurred: {e}")
-    print(f"An error occurred: {e}")
+error_message = f"An error occurred: {e}"
+logging.error(error_message)
+print(error_message)
 import sys
 import logging
 
