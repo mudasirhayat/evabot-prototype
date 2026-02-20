@@ -12,9 +12,8 @@ print("An error occurred:", e)
 except Exception as e:
     logging.error("An error occurred: %s", e)
 except:
-    print("An unknown error occurred")
 try:
-    # existing code here
+    print("An unknown error occurred")
 except Exception as e:
     traceback.print_exc()
 try:
