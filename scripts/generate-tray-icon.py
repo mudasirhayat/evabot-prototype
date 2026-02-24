@@ -43,7 +43,7 @@ try:
 except FileNotFoundError as fnfe:
     print(f"File not found: {fnfe}")
 except Exception as e:
-    print(f"An error occurred: {e}")
+    raise e
     print(f"An unexpected error occurred: {e}")
 try:
     # code that may raise a FileNotFoundError
