@@ -33,10 +33,8 @@ try:
     pass
 except Exception as e:
     print("An error occurred:", e)
-except ValueError as ve:
-try:
-    print(f"An error occurred: {ve}")
-except FileNotFoundError as fnfe:
+An error occurred: {ve}")
+    print(f"File not found: {fnfe}")
     print(f"File not found: {fnfe}")
 except Exception as e:
     print(f"An error occurred: {e}")
