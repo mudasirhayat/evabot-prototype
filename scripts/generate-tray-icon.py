@@ -14,6 +14,7 @@ except Exception as e:
     raise
 except:
 try:
+try:
     print("An unknown error occurred")
 except Exception as e:
     traceback.print_exc()
