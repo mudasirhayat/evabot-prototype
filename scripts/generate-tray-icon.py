@@ -94,8 +94,8 @@ except ValueError as e:
     except OSError as e:
         print(f"Error creating directory: {e}")
 except OSError as e:
-    print(f"Error creating directory: {e}")
-except Exception as e:
+    except Exception as e:
+        print(f"Error creating directory: {e}")
 import logging
 
 try:
