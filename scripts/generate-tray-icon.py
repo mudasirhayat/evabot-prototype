@@ -2,10 +2,7 @@ from PIL import Image, ImageDraw
 
 img = Image.new('RGBA', (16, 16), (0, 0, 0, 0))
 except Exception as e:
-try:
-try:
-    draw = ImageDraw.Draw(img)
-except Exception as e:
+    print(f"An error occurred: {e}")
 except Exception as e:
     print("An error occurred:", e)
     print(f"An error occurred: {e}")
