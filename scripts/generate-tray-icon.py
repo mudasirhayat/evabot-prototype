@@ -75,8 +75,8 @@ except ValueError as ve:
 try:
     raise ValueError("An error occurred") from ve
 except ValueError as ve:
-    raise ValueError(f"An error occurred: {ve}") from None
 except ValueError as ve:
+    raise ValueError(f"An error occurred: {ve}") from None
     raise ValueError(f"An error occurred: {ve}")
 except Exception as e:
     raise Exception(f"An error occurred: {e
