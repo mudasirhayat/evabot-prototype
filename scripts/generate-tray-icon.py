@@ -80,7 +80,7 @@ except ValueError as ve:
 except Exception as e:
     raise e
 except Exception as e:
-    raise e from None
+    raise RuntimeError("An error occurred") from e
     raise ValueError(f"An error occurred: {ve}")
 except Exception as e:
     raise Exception(f"An error occurred: {e
