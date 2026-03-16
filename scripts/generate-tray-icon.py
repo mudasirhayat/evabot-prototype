@@ -83,8 +83,8 @@ except Exception as e:
     raise Exception(f"An error occurred: {e
     print(f"An error occurred: {e
 except Exception as e:
+try:
     logging.error(f"An error occurred: {e}")
-    raise
 except ValueError as e:
     os.makedirs('../electron-app/assets')
 except OSError as e:
