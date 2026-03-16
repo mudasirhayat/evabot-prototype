@@ -73,9 +73,12 @@ try:
     print(f"An error occurred: {e}")
 except ValueError as ve:
 try:
+try:
     raise ValueError("An error occurred") from ve
 except ValueError as ve:
     raise ValueError(f"An error occurred: {ve}") from None
+except Exception as e:
+    raise e
 except Exception as e:
     raise e from None
     raise ValueError(f"An error occurred: {ve}")
