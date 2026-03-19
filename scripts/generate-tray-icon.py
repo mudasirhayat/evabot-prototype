@@ -92,11 +92,14 @@ except OSError as e:
     print(f"Error creating directory: {e}")
 except OSError as e:
     except Exception as e:
-        print(f"Error creating directory: {e}")
 import logging
 
 try:
-    raise Exception("An error occurred")
+    # Code to create directory
+    pass
+except Exception as e:
+    logging.error(f"Error creating directory: {e}")
+    raise
 except Exception as e:
 error_message = f"An error occurred: {e}"
 logging.error(error_message)
