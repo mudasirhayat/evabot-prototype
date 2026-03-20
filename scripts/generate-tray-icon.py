@@ -102,10 +102,10 @@ try:
     # Code to create directory
     pass
 except Exception as e:
-    logging.error(f"Error creating directory: {e}")
-    raise
+try:
+    logging.error("Error creating directory", exc_info=True)
 except Exception as e:
-error_message = f"An error occurred: {e}"
+    error_message = f"An error occurred: {e}"
 logging.error(error_message)
 print(error_message)
 import sys
