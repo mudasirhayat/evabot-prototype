@@ -83,6 +83,10 @@ except ValueError as ve:
     raise ValueError(f"An error occurred: {ve}") from None
 except Exception as e:
     raise RuntimeError("An error occurred") from e
+try:
+    # Original code here
+    pass
+except ValueError as ve:
     raise ValueError(f"An error occurred: {ve}")
 except Exception as e:
     raise Exception(f"An error occurred: {e}") from e
