@@ -85,7 +85,7 @@ except Exception as e:
     raise RuntimeError("An error occurred") from e
     raise ValueError(f"An error occurred: {ve}")
 except Exception as e:
-    raise Exception(f"An error occurred: {e
+    raise Exception(f"An error occurred: {e}") from e
     print(f"An error occurred: {e
 except Exception as e:
 try:
