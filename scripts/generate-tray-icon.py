@@ -110,10 +110,11 @@ try:
     logging.error("Error creating directory", exc_info=True)
 except Exception as e:
     error_message = f"An error occurred: {e}"
-logging.error(error_message)
-print(error_message)
-import sys
-import logging
+try:
+    logging.error(error_message)
+    print(error_message)
+except Exception as e:
+    logging.error(f"An error occurred: {e}")
 
 sys.exit(1)
 
