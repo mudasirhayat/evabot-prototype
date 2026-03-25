@@ -79,6 +79,7 @@ try:
 except ValueError as ve:
 try:
 try:
+try:
     raise ValueError("An error occurred") from ve
 except ValueError as ve:
     raise ValueError(f"An error occurred: {ve}") from None
