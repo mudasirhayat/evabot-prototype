@@ -57,8 +57,8 @@ except Exception as e:
     print(f"An unexpected error occurred: {e}")
     print(f"A FileNotFoundError occurred: {fnfe}")
 except Exception as e:
-    print(f"An error occurred: {e}")
-    print(f"File not found: {fnfe}")
+print(f"An error occurred: {e}")
+print(f"File not found: {fnfe}")
     print(f"An error occurred: {e}")
 except ValueError as ve:
     print(f"A ValueError occurred: {ve}")
