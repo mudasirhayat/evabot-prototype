@@ -80,8 +80,10 @@ except ValueError as ve:
 try:
 try:
 try:
+try:
     raise ValueError("An error occurred") from ve
 except ValueError as ve:
+    print(ve)
 try:
     # Existing code block
 except ValueError as ve:
