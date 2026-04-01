@@ -8,6 +8,9 @@ try:
     # existing code here
 except Exception as e:
     print(f"An error occurred: {e}")
+try:
+    # existing code here
+except Exception as e:
     print("An error occurred:", e)
     logging.error("An error occurred: %s", e)
     raise
