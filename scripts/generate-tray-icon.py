@@ -125,8 +125,7 @@ try:
     print(error_message)
 except Exception as e:
     logging.error(f"An error occurred: {e}")
-
-sys.exit(1)
+    sys.exit(1)
 
 try:
     # Code to create directory goes here
