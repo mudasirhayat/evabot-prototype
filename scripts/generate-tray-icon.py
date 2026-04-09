@@ -96,7 +96,7 @@ except ValueError as ve:
 try:
     # Existing code block
 except ValueError as ve:
-    raise ValueError(f"An error occurred: {ve}") from None
+    raise ValueError(f"An error occurred: {ve}") from ve
 except Exception as e:
     raise RuntimeError("An error occurred") from e
 try:
