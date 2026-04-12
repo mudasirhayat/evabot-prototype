@@ -29,8 +29,9 @@ import logging
 try:
     # existing code here
 except Exception as e:
-    logging.error("An error occurred: %s", e)
-    print("An error occurred: %s" % e)
+    error_message = "An error occurred: %s" % e
+    logging.error(error_message)
+    print(error_message)
 try:
     # Code that may raise an exception
     pass
