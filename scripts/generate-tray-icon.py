@@ -1,7 +1,7 @@
 from PIL import Image, ImageDraw
 
 img = Image.new('RGBA', (16, 16), (0, 0, 0, 0))
-    print(f"An error occurred: {e}")
+print(f"An error occurred: {e}")
 except Exception as e:
 try:
     # existing code here
