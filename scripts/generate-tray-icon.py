@@ -132,8 +132,9 @@ try:
 except Exception as e:
     error_message = f"An error occurred: {e}"
 try:
+    import logging
+    
     logging.error(error_message)
-try:
     print(error_message)
 except Exception as e:
     print(f"An error occurred: {e}")
