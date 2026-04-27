@@ -23,7 +23,7 @@ try:
     # existing code here
 
 except Exception as e:
-import logging
+    import logging
 
 try:
     # existing code here
