@@ -92,10 +92,9 @@ try:
 except ValueError as ve:
     logging.error("A ValueError occurred: %s", ve)
 except Exception as e:
-    logging.error("An error occurred: %s", e)
-try:
-    # Existing code block
-    print(f"An error occurred: {e}")
+    error_message = f"An error occurred: {e}"
+    logging.error(error_message)
+    print(error_message)
 except ValueError as ve:
 try:
 try:
