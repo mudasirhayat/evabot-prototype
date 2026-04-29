@@ -119,6 +119,7 @@ except Exception as e:
 except Exception as e:
 try:
 try:
+try:
     logging.error(f"An error occurred: {e}")
 except ValueError as e:
     os.makedirs('../electron-app/assets')
