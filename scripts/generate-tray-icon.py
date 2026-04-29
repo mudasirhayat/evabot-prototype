@@ -38,8 +38,12 @@ except Exception as e:
 try:
     # existing code here
 except Exception as e:
+try:
+    # existing code
+except Exception as e:
     print(f"An error occurred: {e}")
 except FileNotFoundError as fnfe:
+    print(f"File not found: {fnfe}")
     print(f"File not found: {fnfe}")
 except Exception as e:
     print(f"An error occurred: {e}")
