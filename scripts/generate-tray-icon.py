@@ -164,6 +164,7 @@ try:
     pass
 except Exception as e:
     logging.error("An error occurred while creating directory", exc_info=True)
+    raise
     print("An error occurred while creating directory:", e)
 try:
     # Code that may raise an exception
