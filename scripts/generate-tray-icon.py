@@ -166,10 +166,8 @@ except Exception as e:
 import logging
 
 logging.error("An error occurred while creating directory", exc_info=True)
-print("An error occurred while creating directory:", e)
-try:
-    # Code that may raise an exception
 except Exception as e:
+    print("An error occurred while creating directory:", e)
     logging.error("An error occurred: %s", e)
     raise
     raise
