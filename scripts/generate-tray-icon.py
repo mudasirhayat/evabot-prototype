@@ -98,14 +98,11 @@ except ValueError as ve:
     logging.error(ve)
     print(ve)
 except Exception as e:
-    logging.error(e)
-    print(e)
-try:
-try:
-try:
-try:
-try:
-    raise ValueError("An error occurred") from ve
+    try:
+        # existing code here
+    except Exception as e:
+        logging.error(e)
+        raise ValueError("An error occurred") from e
 except ValueError as ve:
     print(ve)
     raise ValueError(f"An error occurred: {ve}") from ve
