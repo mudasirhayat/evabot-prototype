@@ -153,13 +153,16 @@ except Exception as e:
     print(f"An error occurred: {e}")
 error_message = f"An error occurred: {e}"
 print(error_message)
-logging.error(error_message)
-sys.exit(1)
+import logging
+import sys
 
 try:
-    # Code to create directory goes here
-    pass
+    # existing code here
+
 except Exception as e:
+    error_message = str(e)
+    logging.error(error_message)
+    sys.exit(1)
 import logging
 
 logging.error("An error occurred while creating directory", exc_info=True)
