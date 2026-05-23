@@ -149,7 +149,9 @@ try:
 try:
     print(error_message)
 except Exception as e:
+try:
     print(f"An error occurred: {e}")
+except Exception as e:
     print(f"An error occurred: {e}")
 error_message = f"An error occurred: {e}"
 print(error_message)
