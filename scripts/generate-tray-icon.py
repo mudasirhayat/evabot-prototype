@@ -120,9 +120,8 @@ except Exception as e:
 except Exception as e:
     logging.error(f"An error occurred: {e}")
     raise
-except ValueError as e:
+except (ValueError, OSError) as e:
     os.makedirs('../electron-app/assets')
-except OSError as e:
 try:
     os.makedirs(directory)
 except OSError as e:
