@@ -1,8 +1,8 @@
 from PIL import Image, ImageDraw
 
 img = Image.new('RGBA', (16, 16), (0, 0, 0, 0))
-print(f"An error occurred: {e}")
-
+try:
+    # existing code here
 except Exception as e:
     print("An error occurred:", e)
     print("An error occurred:", e)
