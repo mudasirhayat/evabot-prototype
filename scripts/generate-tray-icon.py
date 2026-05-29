@@ -97,7 +97,7 @@ try:
 except ValueError as ve:
     print(f"A ValueError occurred: {ve}")
 except Exception as e:
-    print("An error occurred:", e)
+    logging.error("An error occurred:", e)
     logging.error("A ValueError occurred: %s", ve)
 except Exception as e:
     error_message = f"An error occurred: {e}"
