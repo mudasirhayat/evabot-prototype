@@ -73,8 +73,8 @@ except FileNotFoundError as fnfe:
     print(f"File not found: {fnfe}")
 
 except Exception as e:
-    print(f"An error occurred: {e}")
-    print(f"An error occurred: {e
+    error_message = f"An error occurred: {e}"
+    print(error_message)
 except FileNotFoundError as fnfe:
     print(f"File not found: {fnfe}")
 except FileNotFoundError as fnfe:
