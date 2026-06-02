@@ -52,7 +52,8 @@ except Exception as e:
     print("An error occurred:", e)
 except Exception as e:
 try:
-    print(f"An error occurred: {e}")
+try:
+    print("Original code here")
 except Exception as e:
     print(f"An error occurred: {e}")
 except FileNotFoundError as fnfe:
