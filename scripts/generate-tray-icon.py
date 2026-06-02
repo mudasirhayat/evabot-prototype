@@ -32,12 +32,6 @@ try:
     # Code that may raise an exception
     pass
 except Exception as e:
-try:
-    # existing code here
-except Exception as e:
-try:
-    # existing code
-except Exception as e:
     raise e
 except FileNotFoundError as fnfe:
 try:
