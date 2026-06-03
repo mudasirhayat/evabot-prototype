@@ -5,9 +5,8 @@ try:
     # existing code here
 except Exception as e:
     print("An error occurred:", e)
+except Exception as e:
     print("An error occurred:", e)
-try:
-    # existing code here
 
 except Exception as e:
     logging.error("An error occurred: %s", e)
