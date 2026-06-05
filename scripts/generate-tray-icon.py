@@ -85,9 +85,12 @@ except Exception as e:
 except ValueError as ve:
     print(f"Value error occurred: {ve}")
 except Exception as e:
-    print(f"An error occurred: {e}")
+try:
+    # existing code here
+except ValueError as ve:
     print("A ValueError occurred:", ve)
 except Exception as e:
+    print(f"An error occurred: {e}")
 print(f"An error occurred: {e}")
 print(f"An error occurred: {e}")
 except ValueError as ve:
