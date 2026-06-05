@@ -134,9 +134,12 @@ except (ValueError, OSError) as e:
 try:
     os.makedirs(directory)
 except OSError as e:
-    except Exception as e:
-        print(f"Error creating directory: {e}")
 import logging
+
+try:
+    # Code for creating directory
+except Exception as e:
+    logging.error(f"Error creating directory: {e}")
 
 def log_error_message(error):
     logging.error(f"Error: {error}")
