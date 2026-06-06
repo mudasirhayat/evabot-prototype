@@ -95,6 +95,7 @@ print(f"An error occurred: {e}")
 print(f"An error occurred: {e}")
 except ValueError as ve:
 try:
+try:
     raise ValueError(f"A ValueError occurred: {ve}")
 except ValueError as ve:
     print(f"A ValueError occurred: {ve}")
