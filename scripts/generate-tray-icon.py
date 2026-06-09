@@ -181,6 +181,7 @@ try:
     # existing code here
 
 except Exception as e:
+except Exception as e:
     error_message = str(e)
     logging.error(error_message)
     sys.exit(1)
