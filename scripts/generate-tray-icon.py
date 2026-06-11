@@ -155,9 +155,8 @@ except Exception as e:
 try:
     logging.error("Error creating directory", exc_info=True)
 except Exception as e:
-    error_message = f"An error occurred: {e}"
-try:
     import logging
+    logging.error(f"An error occurred: {e}")
     
     logging.error(error_message)
 try:
