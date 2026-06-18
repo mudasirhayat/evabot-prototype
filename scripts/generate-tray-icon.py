@@ -148,11 +148,9 @@ except (ValueError, OSError) as e:
 try:
     os.makedirs(directory)
 except OSError as e:
-import logging
-
-try:
-    # Code for creating directory
+    logging.error(f"OS error: {e}")
 except Exception as e:
+    logging.error(f"An error occurred: {e}")
     logging.error(f"Error creating directory: {e}")
 
 def log_error_message(error):
