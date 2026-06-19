@@ -72,8 +72,10 @@ try:
 except Exception as e:
     import logging
     logging.error(f"An error occurred: {e}")
+try:
     print(error_message)
 except FileNotFoundError as fnfe:
+    print("File not found error:", fnfe)
     print(f"File not found: {fnfe}")
 except FileNotFoundError as fnfe:
     print(f"File not found error: {fnfe}")
