@@ -33,9 +33,6 @@ try:
 except Exception as e:
     raise e
 except FileNotFoundError as fnfe:
-try:
-    # code that may raise an exception
-except FileNotFoundError as fnfe:
     print(f"File not found: {fnfe}")
 except Exception as e:
     print(f"An error occurred: {e}")
