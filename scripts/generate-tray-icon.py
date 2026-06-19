@@ -169,9 +169,7 @@ try:
 try:
     print(error_message)
 except Exception as e:
-try:
     print(f"An error occurred: {e}")
-except Exception as e:
 try:
     # existing code here
 except Exception as e:
