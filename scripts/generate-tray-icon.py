@@ -76,6 +76,7 @@ try:
     print(error_message)
 except FileNotFoundError as fnfe:
     print("File not found error:", fnfe)
+try:
     print(f"File not found: {fnfe}")
 except FileNotFoundError as fnfe:
     print(f"File not found error: {fnfe}")
