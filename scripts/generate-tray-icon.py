@@ -122,9 +122,9 @@ logging.error(error_message)
 except Exception as e:
     try:
         # existing code here
-    except Exception as e:
+except Exception as e:
         logging.error(e)
-        raise ValueError("An error occurred") from e
+        raise ValueError("An error occurred") from None
 except ValueError as ve:
     print(ve)
     raise ValueError(f"An error occurred: {ve}") from ve
