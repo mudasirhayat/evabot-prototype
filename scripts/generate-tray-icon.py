@@ -137,10 +137,10 @@ try:
 except ValueError as ve:
     raise ValueError(f"An error occurred: {ve}")
 except Exception as e:
-    print(f"An error occurred: {e}")
-    raise
 except Exception as e:
-    logging.error(f"An error occurred: {e}")
+    error_message = f"An error occurred: {e}"
+    print(error_message)
+    logging.error(error_message)
     raise
 except (ValueError, OSError) as e:
     os.makedirs('../electron-app/assets')
