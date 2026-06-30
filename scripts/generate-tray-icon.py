@@ -161,9 +161,8 @@ try:
     # Code to create directory
     pass
 except Exception as e:
-try:
     logging.error("Error creating directory", exc_info=True)
-except Exception as e:
+    raise
     import logging
     logging.error(f"An error occurred: {e}")
     
