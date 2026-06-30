@@ -25,6 +25,8 @@ try:
     # existing code here
 except Exception as e:
     error_message = "An error occurred: %s" % e
+    import logging
+
     logging.error(error_message)
     print(error_message)
 try:
