@@ -190,13 +190,13 @@ except Exception as e:
 except Exception as e:
     error_message = str(e)
     logging.error(error_message)
-    sys.exit(1)
+import sys
 import logging
 
 try:
-    # code to create directory here
-    pass
+    # code block
 except Exception as e:
+    sys.exit(1)
     logging.error("An error occurred while creating directory", exc_info=True)
 except Exception as e:
     print("An error occurred while creating directory:", e)
